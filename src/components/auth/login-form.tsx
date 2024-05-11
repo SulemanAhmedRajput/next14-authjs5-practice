@@ -35,7 +35,7 @@ export function LoginForm() {
     setError("");
     startTransition(async () => {
       try {
-        const data = await login(values);
+        const data: any = await login(values);
 
         if (data?.error) {
           form.reset();
